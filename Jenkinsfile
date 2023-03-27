@@ -26,6 +26,19 @@ pipeline {
                         sortingMethod: 'ALPHABETICAL', 
                         undefinedStepsNumber: -1
                 }
+                post {
+        always {  
+            publishHTML target: [
+                reportName: 'Test',
+                reportDir: 'Goodreads1/build/reports/tests/testFireDebugUnitTest/',
+                reportFiles: 'index.html', 
+                reportTitles: '', 
+                keepAll: true,
+                alwaysLinkToLastBuild: false,
+                allowMissing: true
+            ]  
+        }
+    }
             }
         }
     }
