@@ -30,7 +30,7 @@ pipeline {
         always {  
             publishHTML target: [
                 reportName: 'Test',
-                reportDir: 'Goodreads1/build/reports/tests/testFireDebugUnitTest/',
+                reportDir: 'Goodreads1/reports/',
                 reportFiles: 'index.html', 
                 reportTitles: '', 
                 keepAll: true,
