@@ -26,19 +26,7 @@ pipeline {
                         sortingMethod: 'ALPHABETICAL', 
                         undefinedStepsNumber: -1
                 }
-                post {
-        always {  
-            publishHTML target: [
-                reportName: 'Test',
-                reportDir: 'Goodreads1/reports/',
-                reportFiles: 'index.html', 
-                reportTitles: 'HTML Report', 
-                keepAll: true,
-                alwaysLinkToLastBuild: true,
-                allowMissing: false
-            ]  
-        }
-    }
+               
             }
         }
     }
