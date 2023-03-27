@@ -26,30 +26,7 @@ pipeline {
                         sortingMethod: 'ALPHABETICAL', 
                         undefinedStepsNumber: -1
                 }
-               stages {
-    stage('Checkout') {
-      steps {
-        script {
-            checkout([$class: 'GitSCM', branches: [[name: '*/master']], userRemoteConfigs: [[url: 'https://github.com/Uthra1999/Jenkins-it.git']]])
-        }
-      }
-    }
-    stage('Test') {
-      steps {
-        sh(script: './mvnw --batch-mode -Dmaven.test.failure.ignore=true test')
-
-      }
-    }
-    stage('Package') {
-      steps {
-        sh(script: './mvnw --batch-mode package -DskipTests')
-      }
-    }
-  }
-  post {
-    always {
-      junit(testResults: 'target/surefire-reports/*.xml', allowEmptyResults : true)
-    }
+              
             }
         }
     }
