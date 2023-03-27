@@ -1,0 +1,13 @@
+ post {
+        always {  
+            publishHTML target: [
+                reportName: 'Test',
+                reportDir: 'reports',
+                reportFiles: 'index.html', 
+                reportTitles: 'HTML Report', 
+                keepAll: true,
+                alwaysLinkToLastBuild: true,
+                allowMissing: false
+            ]  
+        }
+    }
