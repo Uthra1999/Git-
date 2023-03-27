@@ -32,10 +32,10 @@ pipeline {
                 reportName: 'Test',
                 reportDir: 'Goodreads1/reports/',
                 reportFiles: 'index.html', 
-                reportTitles: '', 
+                reportTitles: 'HTML Report', 
                 keepAll: true,
-                alwaysLinkToLastBuild: false,
-                allowMissing: true
+                alwaysLinkToLastBuild: true,
+                allowMissing: false
             ]  
         }
     }
