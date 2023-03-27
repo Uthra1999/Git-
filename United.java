@@ -28,7 +28,7 @@ public class United {
 	        WebElement a = driver.findElement(By.className("currentlyReadingShelf"));
 	        assert a.isDisplayed();
 	        System.out.println("pass");
-	        WebElement book = driver.findElement(By.xpath("/html/body/div[4]/main/div[1]/section[1]/div/div/section/span/div[1]/div/div[1]/a"));
+	        WebElement book = driver.findElement(By.xpath("/html/body/div[4]/main/div[1]/section[1]/div/div/section/span/div[1]/div/div[1]/a));
 	        book.click();
 	        WebElement b = driver.findElement(By.className( "Overlay__window"));
 	        assert b.isDisplayed();
