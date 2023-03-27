@@ -2,7 +2,7 @@
         always {  
             publishHTML target: [
                 reportName: 'Test',
-                reportDir: 'reports',
+                reportDir: 'output/html',
                 reportFiles: 'index.html', 
                 reportTitles: 'HTML Report', 
                 keepAll: true,
