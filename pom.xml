@@ -5,11 +5,6 @@
   <artifactId>Paris</artifactId>
   <version>0.0.1-SNAPSHOT</version>
   <name>Paris</name>
-  
-  <groupId>Demo</groupId>
-    <artifactId>United</artifactId>
-    <version>0.0.1-SNAPSHOT</version>
-    <name>United</name>
  
   <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
