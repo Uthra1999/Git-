@@ -4,13 +4,6 @@
   <artifactId>Paris</artifactId>
   <version>0.0.1-SNAPSHOT</version>
   <name>Paris</name>
- 
-  <dependency>
-        <groupId>Demo</groupId>
-        <artifactId>United</artifactId>
-        <version>1.0.0-SNAPSHOT</version>
-        <name>United</name>
- </dependency>
   
  
   <properties>
@@ -49,6 +42,13 @@
             <artifactId>webdrivermanager</artifactId>
             <version>${webdrivermanager.version}</version>
         </dependency>
+    
+    <dependency>
+        <groupId>Demo</groupId>
+        <artifactId>United</artifactId>
+        <version>1.0.0-SNAPSHOT</version>
+        <name>United</name>
+ </dependency>
  
     </dependencies>
  
