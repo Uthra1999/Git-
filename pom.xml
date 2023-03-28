@@ -47,7 +47,6 @@
         <groupId>Demo</groupId>
         <artifactId>United</artifactId>
         <version>1.0.0-SNAPSHOT</version>
-        <name>United</name>
  </dependency>
  
     </dependencies>
