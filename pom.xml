@@ -1,10 +1,15 @@
 <project xmlns="http://maven.apache.org/POM/3.8.7" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/3.8.7 https://maven.apache.org/xsd/maven-3.8.7.xsd">
   <modelVersion>4.0.0</modelVersion>
+  
   <groupId>Demo</groupId>
   <artifactId>Paris</artifactId>
   <version>0.0.1-SNAPSHOT</version>
   <name>Paris</name>
   
+  <groupId>Demo</groupId>
+    <artifactId>United</artifactId>
+    <version>0.0.1-SNAPSHOT</version>
+    <name>United</name>
  
   <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
