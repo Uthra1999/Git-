@@ -36,19 +36,6 @@ pipeline {
         buildDiscarder(logRotator(numToKeepStr: '30'))
     }
 
-    agent {
-        dockerfile {
-            filename 'Dockerfile'
-            reuseNode true
-            args '-v /usr/share/ca-certificates/amazon:/usr/share/ca-certificates/amazon \
--v /etc/ssl/certs:/etc/ssl/certs \
--v $HOME/secrets.tar.gz:/tmp/secrets.tar.gz \
--v $HOME/.gradle/$EXECUTOR_NUMBER:/home/botuser/.gradle'
-            additionalBuildArgs '--build-arg HOST_USER_ID=$(id -u $USER) \
---build-arg HOST_GROUP_ID=$(id -g $USER) \
---build-arg COMPILE_SDK_VERSION=$(grep compileSdkVersion GoodreadsOnKindleTablet/build.gradle | awk \'{print $2}\')'
-        }
-    }
 
     stages {
         stage('Setup') {
