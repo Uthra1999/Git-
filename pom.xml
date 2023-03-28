@@ -2,10 +2,15 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>Demo</groupId>
   <artifactId>Paris</artifactId>
-  <artifactId>United</artifactId>
   <version>0.0.1-SNAPSHOT</version>
   <name>Paris</name>
-  <name>United</name>
+ 
+  <dependency>
+        <groupId>Demo</groupId>
+        <artifactId>United</artifactId>
+        <version>1.0.0-SNAPSHOT</version>
+        <name>United</name>
+ </dependency>
   
  
   <properties>
