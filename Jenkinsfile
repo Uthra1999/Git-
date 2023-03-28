@@ -28,6 +28,9 @@ pipeline {
                 }
               
             }
+        environment {
+        COMMIT_MESSAGE = sh(script: 'git log -1 --format=%s', returnStdout: true)?.trim()
+    }
         }
     }
 }
