@@ -42,12 +42,6 @@
             <artifactId>webdrivermanager</artifactId>
             <version>${webdrivermanager.version}</version>
         </dependency>
-    
-    <dependency>
-        <groupId>Demo</groupId>
-        <artifactId>United</artifactId>
-        <version>1.0.0-SNAPSHOT</version>
- </dependency>
  
     </dependencies>
  
